@@ -1,0 +1,12 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Kevin Blin
+	email = kblin@outlook.com
+[core]
+	excludesfile = /Users/kevinblin/.gitignore_global
+
+alias.graph=log --all --graph --decorate --oneline
